@@ -1,0 +1,21 @@
+{
+    "name": "parsidev/sms",
+    "description": "package for send sms with laravel5 (published for parssms24.ir)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammad Reza",
+            "email": "info@parsidev.ir"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Parsidev\\Sms": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
