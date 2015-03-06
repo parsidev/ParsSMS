@@ -1,11 +1,6 @@
 <?php namespace Parsidev\Sms;
 
 use Illuminate\Support\ServiceProvider;
-<<<<<<< HEAD
-=======
-use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\Facades\Config;
->>>>>>> origin/master
 use SoapClient;
 
 class SmsServiceProvider extends ServiceProvider {
@@ -42,10 +37,6 @@ class SmsServiceProvider extends ServiceProvider {
 		$this->app['sms'] = $this->app->share(function($app)
                 {
                     $config = config('sms');
-<<<<<<< HEAD
-=======
-                    dd($config['webserviceUrl']);
->>>>>>> origin/master
                     return new Sms($config, new SoapClient($config['webserviceUrl']));
                 });
 	}
